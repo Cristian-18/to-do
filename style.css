@@ -19,8 +19,9 @@ body{
 }
 
 .main {
-    width: 500px;
-    height: 100vh;
+    width: 300px;
+    max-width: 80%;
+    height: 500px;
     margin: 0 auto;
     border: 1px solid black;
     
@@ -48,26 +49,28 @@ body{
 .agregar-tarea{
     border: 1px solid black;
     border-radius: 8px;
-    padding: 5px 5px 5px 5px;
-    width: 250px;
+    padding: 10px;
     background-color: var(--white);
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
     margin-bottom: 25px;
 }
 
 .agregar-tarea input{
     padding: 5px 15px 5px 0px;
+    border: none;
 }
 
 .agregar-tarea .fas{
     color:var(--purple);
     font-size: 28px;
     margin-left: 28px;
+    cursor: pointer;
 }
 
 .tareas p{
     color: var(--white);
+    margin-bottom: 15px;
 }
 
 
@@ -77,5 +80,15 @@ body{
     align-items: center;
     width: 300px;
     padding: 8px;
-    border: 1px solid black;
+    background:linear-gradient(to bottom,var(--blue-dark),var(--gren));
+    border-radius: 8px;
+    margin: 5px 0px 5px 0px;    
+}
+
+.item .far,.item .fas{
+    color: white;
+}
+
+.lista .item i:hover{
+    color:var(--blue-light);
 }
